@@ -4,6 +4,8 @@ defmodule Issues.MixProject do
   def project do
     [
       app: :issues,
+      version: "0.0.1",
+      source_url: "https://github.com/bekomay26/issues",
       escript: escript_config(),
       version: "0.1.0",
       elixir: "~> 1.14-rc",
