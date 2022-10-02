@@ -8,6 +8,17 @@ defmodule Issues.CLI do
   the various functions that end up generating a
   table of the last _n_ issues in a github project
   """
+  def main(argv) do
+    argv
+    |> parse_args
+    |> process
+  end
+
+  @moduledoc """
+  Handle the command line parsing and the dispatch to
+  the various functions that end up generating a
+  table of the last _n_ issues in a github project
+  """
 
   def run(argv) do
     parse_args(argv)
@@ -48,7 +59,7 @@ defmodule Issues.CLI do
     System.halt(0)
   end
 
-  def process([user, project, count]) do
+  def process({user, project, count}) do
     Issues.GithubIssues.fetch(user, project)
     |> decode_response()
     |> sort_into_descending_order()
