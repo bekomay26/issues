@@ -1,6 +1,6 @@
 # Issues
 
-**TODO: Add description**
+**Command line tool for fetching a project's most recent Github issues**
 
 ## Installation
 
