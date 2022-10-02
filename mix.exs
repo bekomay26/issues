@@ -25,7 +25,8 @@ defmodule Issues.MixProject do
   defp deps do
     [
       {:httpoison, "~> 1.8"},
-      {:poison, "~> 5.0"}
+      {:poison, "~> 5.0"},
+      {:ex_doc, "~> 0.27", only: :dev, runtime: false}
     ]
   end
   defp escript_config do

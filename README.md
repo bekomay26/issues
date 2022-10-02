@@ -26,3 +26,5 @@ Or
 - run with mix using `mix run -e 'Issues.CLI.run(argv)'` 
   - e.g `mix run -e 'Issues.CLI.run(["-h"])'` or ` mix run -e 'Issues.CLI.run(["elixir-lang", "elixir"])'`
 
+## Documentation
+- run `mix docs`
